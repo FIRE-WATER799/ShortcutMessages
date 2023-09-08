@@ -1,3 +1,5 @@
+package com.forgetemplatemod;
+
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;
 
