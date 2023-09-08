@@ -3,6 +3,8 @@ package com.forgetemplatemod;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;
 import net.minecraft.client.Minecraft;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
 
 public class MyWebSocketHandler extends WebSocketAdapter {
     @Override
@@ -14,6 +16,7 @@ public class MyWebSocketHandler extends WebSocketAdapter {
     @Override
     public void onWebSocketText(String message) {
         // Forward the message to Minecraft chat
-        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(message);
+        ITextComponent textComponent = new TextComponentString(message);
+        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(textComponet);
     }
 }
