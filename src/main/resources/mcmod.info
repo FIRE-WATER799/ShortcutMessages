@@ -2,7 +2,7 @@
 {
   "modid": "shortcutmessages",
   "name": "Shortcut Messages",
-  "description": "Shortened messaging",
+  "description": "Shortened messaging through a gui",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
