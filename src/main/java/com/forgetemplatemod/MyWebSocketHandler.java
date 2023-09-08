@@ -17,6 +17,6 @@ public class MyWebSocketHandler extends WebSocketAdapter {
     public void onWebSocketText(String message) {
         // Forward the message to Minecraft chat
         ITextComponent textComponent = new TextComponentString(message);
-        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(textComponet);
+        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(textComponent);
     }
 }
