@@ -12,7 +12,7 @@ public class Main {
     @Mod.EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
         // Initialize and start the WebSocket server on a specific port
-        webSocketServer = new MyWebSocketServer(8080);
+        webSocketServer = new MyWebSocketServer(65431);
         try {
             webSocketServer.start();
         } catch (Exception e) {
