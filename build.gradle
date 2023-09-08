@@ -34,7 +34,7 @@ minecraft {
 }
 
 dependencies {
-    compile 'org.eclipse.jetty.websocket:websocket-client:9.4.43.v20210629'
+    compile 'org.eclipse.jetty.websocket:websocket-server:9.4.43.v20210629'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
