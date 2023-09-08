@@ -1,4 +1,4 @@
-package com.forgetemplatemod
+package com.forgetemplatemod;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.websocket.server.WebSocketHandler;
