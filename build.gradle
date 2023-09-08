@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 version = "1.0"
-group = "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+group = "com.firesmods.shortcutmessages" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "shortcutmessages"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -34,6 +34,7 @@ minecraft {
 }
 
 dependencies {
+    compile 'org.eclipse.jetty.websocket:websocket-client:9.4.43.v20210629'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
