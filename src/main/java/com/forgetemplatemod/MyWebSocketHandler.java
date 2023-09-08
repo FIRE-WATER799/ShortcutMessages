@@ -2,6 +2,7 @@ package com.forgetemplatemod;
 
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;
+import net.minecraft.client.Minecraft;
 
 public class MyWebSocketHandler extends WebSocketAdapter {
     @Override
