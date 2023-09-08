@@ -39,7 +39,7 @@ jobs:
       with:
         arguments: build
     - name: LS
-      run: zip build
+      run: zip -r build.zip build
 
     - name: Create Draft Release
       id: create_release
