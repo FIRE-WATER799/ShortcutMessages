@@ -2,7 +2,7 @@ package com.forgetemplatemod;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import com.forgemodtemplate.MyWebSocketServer;
+import com.forgetemplatemod.MyWebSocketServer;
 
 @Mod(modid = "ShortcutMessages", version = "1.0")
 public class Main {
