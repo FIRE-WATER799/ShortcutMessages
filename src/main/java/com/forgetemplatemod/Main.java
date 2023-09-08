@@ -1,7 +1,7 @@
 package com.forgetemplatemod;
 
 
-import com.forgetemplatemod.websocket.SocketServer;
+import com.forgetemplatemod.Websocket;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
