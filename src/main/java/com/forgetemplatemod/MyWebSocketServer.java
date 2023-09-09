@@ -9,7 +9,12 @@ public class MyWebSocketServer {
     private Server server;
 
     public MyWebSocketServer(int port) {
-        server = new Server(port);
+        server = new Server();
+
+        ServerConnector connector = new ServerConnector(server);
+        connector.setHost("localhost");
+        connector.setPort(port);
+        server.addConnector(connector);
         
         WebSocketHandler wsHandler = new WebSocketHandler() {
             @Override
