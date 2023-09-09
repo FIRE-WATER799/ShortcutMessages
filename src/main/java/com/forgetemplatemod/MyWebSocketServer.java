@@ -13,7 +13,7 @@ public class MyWebSocketServer {
         server = new Server();
 
         ServerConnector connector = new ServerConnector(server);
-        connector.setHost("localhost");
+        connector.setHost("0.0.0.0");
         connector.setPort(port);
         server.addConnector(connector);
         
