@@ -42,10 +42,7 @@ jobs:
     - name: Set tag name
       id: tag
       run: |
-        if [[ "${{ github.event_name }}" != "push" ]]; then
-          tag=v$(date +%Y%m%d.%H%M%S)
-        else
-          tag=$(basename "${{ github.ref }}")
+        tag=v$(date +%Y%m%d.%H%M%S)
         fi
         echo "tag=$tag" >> $GITHUB_OUTPUT
     - name: Create Draft Release
