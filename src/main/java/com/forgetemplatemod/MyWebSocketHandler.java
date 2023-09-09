@@ -9,11 +9,11 @@ import net.minecraft.util.text.TextComponentString;
 public class MyWebSocketHandler extends WebSocketAdapter {
     @Override
     public void onWebSocketConnect(Session sess) {
-        ITextComponent textComponent = new TextComponentString("Connecting");
-        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(textComponent);
+        ITextComponent connecting = new TextComponentString("Connecting");
+        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(connecting);
         super.onWebSocketConnect(sess);
-        ITextComponent textComponent = new TextComponentString("Connected");
-        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(textComponent);
+        ITextComponent connected = new TextComponentString("Connected");
+        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(connected);
         // Handle authentication here if needed
     }
 
