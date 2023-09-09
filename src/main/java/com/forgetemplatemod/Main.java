@@ -15,7 +15,7 @@ public class Main {
     @Mod.EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
         // Initialize and start the WebSocket server on a specific port
-        webSocketServer = new MyWebSocketServer(65431);
+        webSocketServer = new MyWebSocketServer(80);
         try {
             webSocketServer.start();
             ITextComponent connected = new TextComponentString("Starting");
